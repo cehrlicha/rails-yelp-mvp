@@ -43,6 +43,8 @@ class Admin::RestaurantsController < ApplicationController
     redirect_to admin_restaurants_path
   end
 
+
+
   private
 
   def restaurant_params
