@@ -1,6 +1,6 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-    <%= image_tag "logo.png" %>
+    <i class="fa fa-cutlery" aria-hidden="true"></i>
 
 
   <!-- Right Navigation -->
@@ -14,13 +14,6 @@
       </button>
     </form>
 
-    <!-- Notification -->
-    <%= link_to "#", class: "navbar-wagon-item navbar-wagon-link" do %>
-      <div class="badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="badge badge-blue">3</div>
-      </div>
-    <% end %>
 
     <!-- Profile picture and dropdown -->
     <div class="navbar-wagon-item">
@@ -33,8 +26,8 @@
             <% end %>
           </li>
           <li>
-            <%= link_to "#" do %>
-              <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
+            <%= link_to "/" do %>
+              <i class="fa fa-sign-out"></i>  <%= t(".profile", default: "Logout") %>
             <% end %>
           </li>
         </ul>

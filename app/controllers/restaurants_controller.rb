@@ -1,4 +1,8 @@
 class RestaurantsController < ApplicationController
+  def home
+    @admin = false
+  end
+
   def index
     @restaurants = Restaurant.all
   end
