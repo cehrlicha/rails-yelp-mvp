@@ -1,0 +1,19 @@
+<h1 class="text-center"><%= @restaurant.name %></h1>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+      <p><em> <%= @restaurant.category.capitalize %> </em></p>
+      <p><%= @restaurant.address %></p>
+    </div>
+
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+      <%= link_to "Back to list", admin_restaurants_path, class: "btn btn-success" %>
+      <%= link_to "Edit", edit_admin_restaurant_path(@restaurant), class: "btn btn-warning" %>
+      <%= link_to "Delete", admin_restaurant_path(@restaurant),
+      method: :delete, class: "btn btn-primary" %>
+    </div>
+
+  </div>
+</div>
